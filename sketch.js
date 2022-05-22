@@ -201,7 +201,7 @@ function saveWeb(){
 }
 
 function loadWeb(){
-  grid=getItem("webSave")
+  if(getItem("webSave")!==null){grid=getItem("webSave")}else{ storeItem("webSave",grid)}
 }
 
 function colorPallet(colorValues){
