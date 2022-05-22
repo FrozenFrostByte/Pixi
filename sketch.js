@@ -131,10 +131,10 @@ if(key=="s"&&wait>30){
   }
   wait++}
 function buttonPressed(){
-  if(window.prompt("Would you to change the Size? This will delete your current stuff, so you should probably save it beforehand")=="yes"){
+  if(window.prompt("Would you to change the Size?\n This will delete your current stuff, so you should probably save it beforehand.")=="yes"){
   returningValue=0
   while(returningValue<=0){
-  returningValue=~~abs(window.prompt("What size? Please put something above zero"))
+  returningValue=~~abs(window.prompt("What size? Please put something above zero."))
   }
   gridSize=returningValue;
   img=createImage(gridSize,gridSize)
